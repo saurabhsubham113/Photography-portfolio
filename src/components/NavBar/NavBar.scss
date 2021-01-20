@@ -1,0 +1,31 @@
+.nav-link {
+  text-decoration: none;
+  color: white;
+
+  // &:hover {
+  //   color: black;
+  //   background-color: rgba(255, 255, 255, 0.7);
+  // }
+}
+.nav {
+  background-color: black;
+  color: white;
+  font-size: 1.8rem;
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 80%;
+    margin: auto;
+    cursor: pointer;
+    .nav-item {
+      padding: 1.6rem;
+
+      &:hover {
+        color: black;
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+}

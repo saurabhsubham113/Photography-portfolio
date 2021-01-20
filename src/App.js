@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-function App() {
+import './App.scss';
+import NavBar from './components/NavBar/NavBar';
+import About from './components/pages/About/About';
+import Contact from './components/pages/Contact/Contact';
+import Fashion from './components/pages/Fashion/Fashion';
+import Fitness from './components/pages/Fitness/Fitness';
+import Home from './components/pages/Home/Home';
+import Jewellery from './components/pages/Jewellery/Jewellery';
+import Nature from './components/pages/Nature/Nature';
+import ProfileColumn from './components/ProfleColumn/ProfileColumn';
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <NavBar />
+      <Switch>
+        <div className="profile-body">
+          <ProfileColumn className="profile" />
+          <Route path="/" exact component={Home} />
+          <Route path="/home" exact component={Home} />
+          <Route path="/fashion" exact component={Fashion} />
+          <Route path="/jewellery" exact component={Jewellery} />
+          <Route path="/fitness" exact component={Fitness} />
+          <Route path="/nature" exact component={Nature} />
+          <Route path="/contact" exact component={Contact} />
+          <Route path="/about" exact component={About} />
+        </div>
+      </Switch>
+    </Router>
+  )
 }
 
-export default App;

@@ -1,0 +1,31 @@
+.column {
+  width: 30%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .name {
+    .heading {
+      font-size: 4.5rem;
+    }
+    .sub-heading {
+      font-size: 2.5rem;
+      font-weight: 500;
+      letter-spacing: 0.5rem;
+    }
+  }
+  .social {
+    .social-heading {
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+      margin: 0.5rem 0;
+      margin-right: 3.8rem;
+    }
+    .fb {
+      margin-left: 6rem;
+      padding-right: 2rem;
+    }
+  }
+}
