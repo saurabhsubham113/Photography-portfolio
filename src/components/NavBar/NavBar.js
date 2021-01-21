@@ -7,25 +7,25 @@ function NavBar() {
         <div className="NavBar">
             <nav className="nav">
                 <ul className="nav-links">
-                    <NavLink className="nav-link" to="/home">
+                    <NavLink activeClassName="nav-link-active" className="nav-link" to="/home">
                         <li className="nav-item">Home</li>
                     </NavLink>
-                    <NavLink className="nav-link" to="/fashion">
+                    <NavLink activeClassName="nav-link-active" className="nav-link" to="/fashion">
                         <li className="nav-item">Fashion</li>
                     </NavLink>
-                    <NavLink className="nav-link" to="/fitness">
+                    <NavLink activeClassName="nav-link-active" className="nav-link" to="/fitness">
                         <li className="nav-item">Fitness</li>
                     </NavLink>
-                    <NavLink className="nav-link" to="/nature">
+                    <NavLink activeClassName="nav-link-active" className="nav-link" to="/nature">
                         <li className="nav-item">Nature</li>
                     </NavLink>
-                    <NavLink className="nav-link" to="/jewellery">
+                    <NavLink activeClassName="nav-link-active" className="nav-link" to="/jewellery">
                         <li className="nav-item">Jewellery</li>
                     </NavLink>
-                    <NavLink className="nav-link" to="/about">
+                    <NavLink activeClassName="nav-link-active" className="nav-link" to="/about">
                         <li className="nav-item">About</li>
                     </NavLink>
-                    <NavLink className="nav-link" to="/contact">
+                    <NavLink activeClassName="nav-link-active" className="nav-link" to="/contact">
                         <li className="nav-item">Contact</li>
                     </NavLink>
                 </ul>

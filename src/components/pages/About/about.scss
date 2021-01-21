@@ -1,0 +1,28 @@
+.about {
+  width: 76%;
+  height: 100vh;
+  overflow: hidden;
+
+  &-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 3.5rem;
+  }
+  img {
+    width: 55rem;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .profile-summary {
+    align-self: center;
+    padding: 2rem 0;
+    p {
+      padding-right: 3.5rem;
+      text-align: justify;
+    }
+  }
+}

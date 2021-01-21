@@ -16,9 +16,10 @@ export default function App() {
   return (
     <Router>
       <NavBar />
-      <Switch>
-        <div className="profile-body">
-          <ProfileColumn className="profile" />
+      <div className="profile-body">
+        <ProfileColumn className="profile" />
+        <Switch>
+
           <Route path="/" exact component={Home} />
           <Route path="/home" exact component={Home} />
           <Route path="/fashion" exact component={Fashion} />
@@ -27,8 +28,9 @@ export default function App() {
           <Route path="/nature" exact component={Nature} />
           <Route path="/contact" exact component={Contact} />
           <Route path="/about" exact component={About} />
-        </div>
-      </Switch>
+
+        </Switch>
+      </div>
     </Router>
   )
 }

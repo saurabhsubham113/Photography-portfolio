@@ -12,18 +12,9 @@
     flex: 1;
     width: 42rem;
     height: 90%;
+    object-fit: cover;
+    object-position: top;
   }
-
-  // .container {
-  //   overflow: hidden;
-  //   &:hover {
-  //     cursor: pointer;
-  //     img {
-  //       transform: scale(1.1);
-  //       transition: transform 8s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-  //     }
-  //   }
-  // }
 
   //scroll bar styling
   &::-webkit-scrollbar {
