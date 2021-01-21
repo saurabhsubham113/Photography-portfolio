@@ -13,31 +13,14 @@ import fit8 from '../../../assets/images/fitness/image-8.jpg';
 function Fitness() {
     return (
         <div className="fitness">
-            <div className="container fit-1">
-                <img src={fit1} alt="fitness" />
-            </div>
-            <div className="container fit-2">
-                <img src={fit2} alt="fitness" />
-            </div>
-            <div className="container fit-3">
-                <img src={fit3} alt="fitness" />
-            </div>
-            <div className="container fit-4">
-                <img src={fit4} alt="fitness" />
-            </div>
-            <div className="container fit-5">
-                <img src={fit5} alt="fitness" />
-            </div>
-            <div className="container fit-6">
-                <img src={fit6} alt="fitness" />
-            </div>
-            <div className="container fit-7">
-                <img src={fit7} alt="fitness" />
-            </div>
-            <div className="container fit-8">
-                <img src={fit8} alt="fitness" />
-            </div>
-
+            <img src={fit1} alt="fitness" />
+            <img src={fit2} alt="fitness" />
+            <img src={fit3} alt="fitness" />
+            <img src={fit4} alt="fitness" />
+            <img src={fit5} alt="fitness" />
+            <img src={fit6} alt="fitness" />
+            <img src={fit7} alt="fitness" />
+            <img src={fit8} alt="fitness" />
         </div>
     )
 }

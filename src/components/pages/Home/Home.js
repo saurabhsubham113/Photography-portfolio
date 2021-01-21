@@ -1,8 +1,7 @@
 import React from 'react';
 
-import img1 from '../../../assets/images/fashion/image-2.jpg';
-import img2 from '../../../assets/images/fashion/image-6.jpg';
-import img3 from '../../../assets/images/fashion/image-7.jpg';
+import img1 from '../../../assets/images/profile/image-1.jpg';
+
 import './home.scss';
 
 function Home() {

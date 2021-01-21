@@ -17,18 +17,20 @@ import nature12 from '../../../assets/images/nature/image-14.jpg';
 function Nature() {
     return (
         <div className="nature">
-            <img src={nature1} alt="nature" />
-            <img src={nature2} alt="nature" />
+            <img src={nature9} alt="nature" />
+            <img src={nature10} alt="nature" />
+            <img src={nature11} alt="nature" />
+            <img src={nature12} alt="nature" />
             <img src={nature3} alt="nature" />
+
+            <img src={nature2} alt="nature" />
+            <img src={nature1} alt="nature" />
             <img src={nature4} alt="nature" />
             <img src={nature5} alt="nature" />
             <img src={nature6} alt="nature" />
             <img src={nature7} alt="nature" />
             <img src={nature8} alt="nature" />
-            <img src={nature9} alt="nature" />
-            <img src={nature10} alt="nature" />
-            <img src={nature11} alt="nature" />
-            <img src={nature12} alt="nature" />
+
 
         </div>
     )

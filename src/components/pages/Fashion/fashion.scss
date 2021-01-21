@@ -1,9 +1,17 @@
 .fashion {
   width: 76%;
-  max-height: 100vh;
+  height: 100vh;
   overflow-y: scroll;
   display: flex;
+  object-fit: cover;
+  object-position: center;
   flex-wrap: wrap;
+  gap: 2rem;
+  img {
+    flex: 1;
+    width: 28rem;
+    // height: 100%;
+  }
 
   &::-webkit-scrollbar {
     width: 20px;

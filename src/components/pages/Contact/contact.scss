@@ -1,0 +1,76 @@
+.contact {
+  width: 76%;
+  height: 100vh;
+  //   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input,
+  textarea,
+  button {
+    font-family: "Poppins";
+    font-size: 1.8rem;
+  }
+
+  //   .contact-form {
+  //     position: absolute;
+  //     top: 25%;
+  //     left: 12%;
+  //   }
+
+  &-inputs {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &-main {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    input {
+      padding: 1rem;
+      width: 28rem;
+    }
+    input[type="text"]:hover,
+    input[type="text"]:focus,
+    input[type="email"]:hover,
+    input[type="email"]:focus {
+      background-color: #f0f0f0;
+    }
+  }
+
+  &-message {
+    textarea {
+      padding: 1rem;
+      resize: none;
+      &:hover,
+      &:focus {
+        background-color: #f0f0f0;
+        outline: auto;
+      }
+    }
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 2.8rem;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    border: 0.2rem solid rgb(0, 0, 0);
+    outline: none;
+    background: linear-gradient(to right, black 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+
+    &:hover {
+      color: white;
+      background-position: left bottom;
+      //   background-color: rgb(182, 182, 182);
+      //   color: #000;
+    }
+  }
+}

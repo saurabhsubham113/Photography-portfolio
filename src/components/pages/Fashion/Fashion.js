@@ -10,8 +10,8 @@ import fash7 from '../../../assets/images/fashion/image-7.jpg';
 import fash8 from '../../../assets/images/fashion/image-8.jpg';
 import fash9 from '../../../assets/images/fashion/image-9.jpg';
 import fash10 from '../../../assets/images/fashion/image-10.jpg';
-import fash11 from '../../../assets/images/fashion/image-10.jpg';
-import fash12 from '../../../assets/images/fashion/image-10.jpg';
+import fash11 from '../../../assets/images/fashion/image-11.jpg';
+import fash12 from '../../../assets/images/fashion/image-12.jpg';
 import './fashion.scss'
 function Fashion() {
     return (
