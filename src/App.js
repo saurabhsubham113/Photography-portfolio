@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './App.scss';
 import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
 import About from './components/pages/About/About';
 import Contact from './components/pages/Contact/Contact';
 import Fashion from './components/pages/Fashion/Fashion';
@@ -28,9 +29,9 @@ export default function App() {
           <Route path="/nature" exact component={Nature} />
           <Route path="/contact" exact component={Contact} />
           <Route path="/about" exact component={About} />
-
         </Switch>
       </div>
+      <Footer />
     </Router>
   )
 }
