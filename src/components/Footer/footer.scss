@@ -1,0 +1,18 @@
+.footer {
+  padding: 2rem 0;
+  background-color: black;
+  color: white;
+
+  &-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  a {
+    color: #dadada;
+  }
+}
