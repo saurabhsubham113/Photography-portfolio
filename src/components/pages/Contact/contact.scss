@@ -1,22 +1,17 @@
 .contact {
   width: 76%;
   height: 100vh;
-  //   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   input,
   textarea,
   button {
     font-family: "Poppins";
     font-size: 1.8rem;
+    border: 0.2rem solid black;
   }
-
-  //   .contact-form {
-  //     position: absolute;
-  //     top: 25%;
-  //     left: 12%;
-  //   }
 
   &-inputs {
     display: flex;
@@ -30,7 +25,7 @@
 
     input {
       padding: 1rem;
-      width: 28rem;
+      width: 100%;
     }
     input[type="text"]:hover,
     input[type="text"]:focus,

@@ -1,13 +1,16 @@
 import React from 'react';
 import './about.scss';
 
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+
 import profilePic from "../../../assets/images/profile/image-5.jpg";
 function About() {
     return (
         <div className="about">
             <div className="about-container">
                 <div className="profile-image">
-                    <img src={profilePic} alt="profile" />
+                    {/* <img src={profilePic} alt="profile" /> */}
+                    <LazyLoadImage src={profilePic} alt=" profile" effect="blur" />
                 </div>
                 <div className="profile-summary">
                     <h2>Behind the Lens</h2>
@@ -18,7 +21,7 @@ function About() {
                         you like on your page. I’m a great place for you to tell a story and let
                         your users know a little more about you.
                     <br />
-                    <br />
+                        <br />
                         This is a great space to write long text about your company and your services.
                         You can use this space to go into a little more detail about your company.
                         Talk about your team and what services you provide.

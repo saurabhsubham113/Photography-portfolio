@@ -21,11 +21,25 @@
       font-size: 2rem;
       letter-spacing: 0.2rem;
       margin: 0.5rem 0;
-      margin-right: 3.8rem;
+      text-align: center;
     }
     .fb {
       margin-left: 6rem;
-      padding-right: 2rem;
+      padding-right: 4rem;
+      img {
+        filter: invert(40%) sepia(53%) saturate(613%) hue-rotate(181deg)
+          brightness(87%) contrast(93%);
+      }
+    }
+    .insta {
+      img {
+        filter: invert(39%) sepia(27%) saturate(2100%) hue-rotate(302deg)
+          brightness(90%) contrast(86%);
+      }
+    }
+    img {
+      transform: scale(1.5);
+      padding-top: 1rem;
     }
   }
 }
