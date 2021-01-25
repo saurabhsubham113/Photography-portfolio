@@ -1,28 +1,51 @@
 .about {
   width: 76%;
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
 
   &-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-
-    gap: 3.5rem;
+    display: block;
   }
   img {
-    width: 55rem;
-    height: 100vh;
+    margin-top: 1rem;
+    padding: 0 1.5rem;
+    width: 40rem;
+    float: left;
     object-fit: cover;
     object-position: top;
   }
 
   .profile-summary {
-    align-self: center;
+    float: right;
+    // align-self: center;
     padding: 2rem 0;
     p {
       padding-right: 3.5rem;
       text-align: justify;
+    }
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1000px) {
+  .about {
+    overflow: auto;
+    &-container {
+      // flex-direction: column;
+      display: block;
+      gap: 2rem;
+    }
+    .profile-image {
+      height: 40%;
+      display: inline;
+    }
+    img {
+      margin-top: 1rem;
+      padding: 0 1.5rem;
+      float: left;
+      width: 50%;
+    }
+    .profile-summary {
+      float: right;
     }
   }
 }

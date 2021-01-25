@@ -9,10 +9,11 @@ function About() {
         <div className="about">
             <div className="about-container">
                 <div className="profile-image">
-                    {/* <img src={profilePic} alt="profile" /> */}
-                    <LazyLoadImage src={profilePic} alt=" profile" effect="blur" />
+                    {/* <LazyLoadImage src={profilePic} alt=" profile" effect="blur" /> */}
                 </div>
                 <div className="profile-summary">
+                    <img src={profilePic} alt="profile" />
+
                     <h2>Behind the Lens</h2>
                     <p>
                         I'm a paragraph. Click here to add your own text and edit me. It’s easy.
