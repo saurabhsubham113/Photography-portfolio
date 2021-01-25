@@ -1,7 +1,6 @@
 import React from 'react';
 import './about.scss';
 
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 import profilePic from "../../../assets/images/profile/image-5.jpg";
 function About() {

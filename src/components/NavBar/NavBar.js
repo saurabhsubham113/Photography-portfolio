@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { NavLink } from "react-router-dom";
 import './NavBar.scss'
 
@@ -6,10 +6,6 @@ function NavBar() {
 
     const [isActive, setIsActive] = useState(false)
 
-    useEffect(() => {
-        const list = document.getElementsByClassName('nav-item');
-        console.log(isActive);
-    }, [isActive])
 
 
     const navHandle = (e) => {
