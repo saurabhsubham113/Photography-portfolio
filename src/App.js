@@ -16,20 +16,22 @@ import ProfileColumn from './components/ProfleColumn/ProfileColumn';
 export default function App() {
   return (
     <Router>
-      <NavBar />
-      <div className="profile-body">
-        <ProfileColumn className="profile" />
-        <Switch>
+      <div className="main">
+        <NavBar />
+        <div className="profile-body">
+          <ProfileColumn className="profile" />
+          <Switch>
 
-          <Route path="/" exact component={Home} />
-          <Route path="/home" exact component={Home} />
-          <Route path="/fashion" exact component={Fashion} />
-          <Route path="/jewellery" exact component={Jewellery} />
-          <Route path="/fitness" exact component={Fitness} />
-          <Route path="/nature" exact component={Nature} />
-          <Route path="/contact" exact component={Contact} />
-          <Route path="/about" exact component={About} />
-        </Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/home" exact component={Home} />
+            <Route path="/fashion" exact component={Fashion} />
+            <Route path="/jewellery" exact component={Jewellery} />
+            <Route path="/fitness" exact component={Fitness} />
+            <Route path="/nature" exact component={Nature} />
+            <Route path="/contact" exact component={Contact} />
+            <Route path="/about" exact component={About} />
+          </Switch>
+        </div>
       </div>
       <Footer />
     </Router>
