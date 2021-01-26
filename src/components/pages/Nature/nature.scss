@@ -46,3 +46,11 @@
     flex: 1;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .nature {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+}

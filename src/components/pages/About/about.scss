@@ -17,18 +17,19 @@
 
   .profile-summary {
     float: right;
-    // align-self: center;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     p {
-      padding-right: 3.5rem;
+      padding: 0 1.5rem;
       text-align: justify;
     }
   }
 }
 
-@media (min-width: 720px) and (max-width: 1000px) {
+@media (min-width: 769px) and (max-width: 1000px) {
   .about {
-    overflow: auto;
+    width: 76%;
+    height: auto;
+    // overflow: auto;
     &-container {
       // flex-direction: column;
       display: block;
@@ -46,6 +47,23 @@
     }
     .profile-summary {
       float: right;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+    img {
+      width: 20rem;
+    }
+    .profile-summary {
+      p {
+        text-align: start;
+      }
     }
   }
 }

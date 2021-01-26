@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import { NavLink } from "react-router-dom";
 import './NavBar.scss'
 
@@ -6,24 +6,29 @@ function NavBar() {
 
     const [isActive, setIsActive] = useState(false)
 
-
-
-    const navHandle = (e) => {
+    const navHandle = useCallback(() => {
         setIsActive(prevItem => (
             !isActive
         ))
-    }
+    }, [isActive])
+
+
+    useEffect(() => {
+        const navlinks = document.getElementById("nav-links")
+        navlinks.addEventListener("click", navHandle)
+        return () => {
+            document.removeEventListener("click", navHandle)
+        }
+    }, [navHandle])
+
+
 
     document.getElementsByClassName('nav-item')
     return (
         <div className="NavBar">
             <nav className="nav ">
-                <div className="logo">
-                    <NavLink activeClassName="nav-link-active" className="nav-link" to="/home">
-                        ANKIT RAJ
-                    </NavLink>
-                </div>
-                <ul className={isActive ? "nav-links nav-active" : "nav-links"}>
+
+                <ul id="nav-links" className={isActive ? "nav-links nav-active" : "nav-links"}>
                     <NavLink activeClassName="nav-link-active" className="nav-link" to="/home">
                         <li className="nav-item">Home</li>
                     </NavLink>

@@ -39,3 +39,11 @@
     background: rgb(143, 145, 148);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .fitness {
+    width: auto;
+    height: auto;
+    overflow: hidden; 
+  }
+}

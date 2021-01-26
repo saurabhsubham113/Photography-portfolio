@@ -1,5 +1,4 @@
 .column {
-  z-index: 1;
   width: 30%;
   min-height: 100vh;
   display: flex;
@@ -45,10 +44,10 @@
   }
 }
 
-@media (min-width: 720px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .column {
     width: 40%;
-
+    z-index: 1;
     .name {
       .heading {
         text-align: center;
@@ -58,5 +57,13 @@
         font-size: 2rem;
       }
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    width: auto;
+    min-height: auto;
+    margin-bottom: 3rem;
   }
 }

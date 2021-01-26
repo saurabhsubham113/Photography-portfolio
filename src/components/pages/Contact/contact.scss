@@ -16,7 +16,7 @@
   }
 
   &-form {
-    margin: 4rem 0;
+    margin: 4rem;
   }
 
   &-inputs {
@@ -96,8 +96,10 @@
   }
 }
 
-@media (min-width: 720px) and (max-width: 1100px) {
+@media (min-width: 769px) and (max-width: 1100px) {
   .contact {
+    width: auto;
+    height: auto;
     &-inputs {
       flex-direction: column;
     }
@@ -106,6 +108,53 @@
       gap: 2rem;
       input {
         width: 47rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .contact {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+
+    &-inputs {
+      flex-direction: column;
+    }
+
+    &-main {
+      margin: auto;
+      gap: 2rem;
+    }
+
+    &-message {
+      textarea {
+        width: 28rem;
+      }
+    }
+
+    .btn {
+      width: 28rem;
+    }
+  }
+}
+
+@media (min-width: 541px) and (max-width: 768px) {
+  .contact {
+    width: auto;
+    height: auto;
+    &-inputs {
+      flex-direction: column;
+    }
+    &-main {
+      input {
+        width: 40rem;
+      }
+    }
+    &-message {
+      textarea {
+        width: 40rem;
       }
     }
   }

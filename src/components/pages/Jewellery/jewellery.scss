@@ -1,6 +1,6 @@
 .jewellery {
   width: 76%;
-  max-height: 100vh;
+  height: 100vh;
   overflow-y: scroll;
   display: flex;
   flex-wrap: wrap;
@@ -36,5 +36,13 @@
   img {
     width: 23rem;
     flex: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .jewellery {
+    width: auto;
+    height: auto;
+    overflow-y: auto;
   }
 }
