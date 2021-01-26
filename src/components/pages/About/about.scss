@@ -51,11 +51,12 @@
 @media screen and (max-width: 768px) {
   .about {
     width: auto;
-    height: auto;
+    height: 100vh;
     overflow: hidden;
     margin: auto;
+    flex: 1;
     img {
-      width: 20rem;
+      width: 70%;
     }
     .profile-summary {
       p {

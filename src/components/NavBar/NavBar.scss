@@ -75,6 +75,7 @@
       flex-direction: column;
       transform: translatey(-120%);
       transition: transform 0.5s ease-in;
+      -webkit-tap-highlight-color: transparent;
       .nav-link {
         width: 100%;
         text-align: center;
@@ -82,6 +83,12 @@
       .nav-link-active {
         width: 100%;
       }
+
+      // &:focus {
+      //   outline: none;
+      //   -ms-touch-action: manipulation;
+      //   touch-action: manipulation;
+      // }
     }
 
     .burger {

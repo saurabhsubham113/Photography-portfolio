@@ -15,6 +15,7 @@ function NavBar() {
 
     useEffect(() => {
         const navlinks = document.getElementById("nav-links")
+
         navlinks.addEventListener("click", navHandle)
         return () => {
             document.removeEventListener("click", navHandle)
@@ -30,7 +31,7 @@ function NavBar() {
 
                 <ul id="nav-links" className={isActive ? "nav-links nav-active" : "nav-links"}>
                     <NavLink activeClassName="nav-link-active" className="nav-link" to="/home">
-                        <li className="nav-item">Home</li>
+                        <li id="nav-item" className="nav-item">Home</li>
                     </NavLink>
                     <NavLink activeClassName="nav-link-active" className="nav-link" to="/fashion">
                         <li className="nav-item">Fashion</li>
@@ -51,7 +52,7 @@ function NavBar() {
                         <li className="nav-item">Contact</li>
                     </NavLink>
                 </ul>
-                <div onClick={navHandle} className="burger">
+                <div onClick={navHandle} className="burger" id="burger">
                     <div className={isActive ? "toggle-line-1" : "line-1"}></div>
                     <div className={isActive ? "toggle-line-2" : "line-2"}></div>
                     <div className={isActive ? "toggle-line-3" : "line-3"}></div>
