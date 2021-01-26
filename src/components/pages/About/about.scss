@@ -1,7 +1,6 @@
 .about {
   width: 76%;
   height: 100vh;
-  overflow: auto;
 
   &-container {
     display: block;
@@ -29,9 +28,7 @@
   .about {
     width: 76%;
     height: auto;
-    // overflow: auto;
     &-container {
-      // flex-direction: column;
       display: block;
       gap: 2rem;
     }
