@@ -55,11 +55,7 @@
   }
   .nav {
     height: 8vh;
-    z-index: 100;
     background: black;
-    .logo {
-      display: block;
-    }
     .nav-active {
       transform: translateX(0%) !important;
     }

@@ -27,7 +27,7 @@
   &-main {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 4.2rem;
 
     input {
       padding: 1rem;
@@ -43,6 +43,7 @@
 
   &-message {
     textarea {
+      width: 47rem;
       padding: 1rem;
       resize: none;
       &:hover,
